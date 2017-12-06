@@ -26,6 +26,7 @@ class EpisodeViewController: UIViewController {
             return
         }
         episodeNameLabel.text = episode.name
+        self.episodeImage.image = #imageLiteral(resourceName: "defaultImage")
         episodeSeasonLabel.text = "Season: \(episode.season.description)"
         if let episodeImageUrl = episode.image?.original{
             ImageAPIClient.manager.getImage(from: episodeImageUrl, completionHandler: {self.episodeImage.image = $0}, errorHandler: {print($0)})

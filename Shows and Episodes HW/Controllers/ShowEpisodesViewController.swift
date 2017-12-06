@@ -28,14 +28,19 @@ class ShowEpisodesViewController: UIViewController,UITableViewDelegate,UITableVi
             defaultCell.textLabel?.text = episodeSetup.name
             return defaultCell
         }
-        cell.textLabel?.text = episodeSetup.name
-        cell.detailTextLabel?.text = "Season: \(episodeSetup.season)"
-        if let episodeImage = episodeSetup.image?.medium{
-            ImageAPIClient.manager.getImage(from: episodeImage, completionHandler: {cell.imageView?.image = $0; cell.setNeedsLayout()}, errorHandler: {print($0)})
-        }else{
-            cell.imageView?.image = #imageLiteral(resourceName: "defaultImage")
+        if let cell = cell as? CustomEpisodeTableViewCell{
+            cell.EpisodePoster.image = #imageLiteral(resourceName: "defaultImage")
+            cell.episodeName.text = episodeSetup.name
+            cell.episodeSeason.text = "Season: \(episodeSetup.season)"
+            if let episodeImage = episodeSetup.image?.medium{
+                ImageAPIClient.manager.getImage(from: episodeImage, completionHandler: {cell.EpisodePoster.image = $0; cell.setNeedsLayout()}, errorHandler: {print($0)})
+            }else{
+                cell.EpisodePoster.image = #imageLiteral(resourceName: "defaultImage")
+            }
+            return cell
         }
         return cell
+
     }
     
     func loadEpisodes(){

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		81799B441FD88CDF00039BCB /* CustomEpisodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81799B431FD88CDF00039BCB /* CustomEpisodeTableViewCell.swift */; };
 		81AE8F131FD6389F0039471F /* Image APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AE8F121FD6389F0039471F /* Image APIClient.swift */; };
 		81EA6F5F1FD7B7B100BC0764 /* CustomShowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EA6F5E1FD7B7B100BC0764 /* CustomShowTableViewCell.swift */; };
 		81FF41541FD485D1000F0D1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FF41531FD485D1000F0D1C /* AppDelegate.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		81799B431FD88CDF00039BCB /* CustomEpisodeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomEpisodeTableViewCell.swift; sourceTree = "<group>"; };
 		81AE8F121FD6389F0039471F /* Image APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image APIClient.swift"; sourceTree = "<group>"; };
 		81EA6F5E1FD7B7B100BC0764 /* CustomShowTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShowTableViewCell.swift; sourceTree = "<group>"; };
 		81FF41501FD485D1000F0D1C /* Shows and Episodes HW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shows and Episodes HW.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,6 +108,7 @@
 				81FF419A1FD62172000F0D1C /* ShowEpisodesViewController.swift */,
 				81FF41A01FD63306000F0D1C /* EpisodeViewController.swift */,
 				81EA6F5E1FD7B7B100BC0764 /* CustomShowTableViewCell.swift */,
+				81799B431FD88CDF00039BCB /* CustomEpisodeTableViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 				81FF419B1FD62172000F0D1C /* ShowEpisodesViewController.swift in Sources */,
 				81FF41541FD485D1000F0D1C /* AppDelegate.swift in Sources */,
 				81FF419F1FD624E1000F0D1C /* Episode APIClient.swift in Sources */,
+				81799B441FD88CDF00039BCB /* CustomEpisodeTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
