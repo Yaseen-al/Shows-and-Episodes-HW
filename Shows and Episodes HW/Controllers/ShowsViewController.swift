@@ -34,7 +34,7 @@ class ShowsViewController: UIViewController,UITableViewDelegate, UITableViewData
         }
         if let cell = cell as? CustomShowTableViewCell{
             cell.showName.text = showSetup.show.title
-            cell.showPoster.image = nil
+            cell.showPoster.image = #imageLiteral(resourceName: "defaultImage")
             if let showImage = showSetup.show.image?.original{
                 // notice that you want to update the image in the completion handler as it is processed on the main quee
                 ImageAPIClient.manager.getImage(from: showImage, completionHandler: {cell.showPoster.image = $0; cell.setNeedsLayout()}, errorHandler: {print($0)})
