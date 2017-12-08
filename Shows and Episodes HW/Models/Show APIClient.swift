@@ -27,5 +27,7 @@ struct ShowAPIClient {
         NetworkHelper.manager.performDataTask(with: url,
                                               completionHandler: completion,
                                               errorHandler: {print($0)})
+
+        
     }
 }
